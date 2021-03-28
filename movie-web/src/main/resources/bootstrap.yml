@@ -3,9 +3,9 @@ server:
 
 spring:
   application:
-    name: movie-web
+    name: movies-web
 
-eureka:
-  client:
-    service-url:
-      default-zone: http://localhost:8761/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      default-zone: http://localhost:8761/eureka/

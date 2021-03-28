@@ -23,7 +23,6 @@ import javax.sql.DataSource;
 public class MovieWebIntegrationConfiguration {
 
     private MovieWebProperties movieWebProperties;
-    private IntegrationFlowContext integrationFlowContext;
 
 
     @Bean
