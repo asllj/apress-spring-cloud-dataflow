@@ -1,22 +1,22 @@
 spring:
   application:
     name: movies
-#  jmx:
-#    enabled: true
+  jmx:
+    enabled: true
   cloud:
     config:
       uri:
         - http://localhost:8888
-#eureka:
- # client:
-  #  register-with-eureka: false
-   # service-url:
-    #  default-zone: http://localhost:8761/eureka/
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      default-zone: http://localhost:8761/eureka/
 
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include:
-#          - hystrix.stream
-#          - health
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - hystrix.stream
+          - health

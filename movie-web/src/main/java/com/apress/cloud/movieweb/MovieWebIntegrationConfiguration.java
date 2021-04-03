@@ -35,6 +35,7 @@ public class MovieWebIntegrationConfiguration {
                 .get();
     }
 
+
     @Bean
     public IntegrationFlow logFlow() {
         return IntegrationFlows.from("publisher")

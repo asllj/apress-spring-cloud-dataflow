@@ -1,0 +1,24 @@
+spring:
+  application:
+    # Unique name for Eureka server service
+    name: EurekaServer
+server:
+  # In which port server will be bound.
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+    #prefer-ip-address: true
+    #instance-id:
+    statusPageUrlPath: ${eureka.instance.hostname}/info
+    healthCheckUrlPath: ${eureka.instance.hostname}/health
+  client:
+    #This determines is this server register itself as client as I said earlier Eureka server is also act as client so that it  can sync the registry.The value false means prevent itself act as a client.
+    registerWithEureka: false
+    #Not register itself in service registry
+    fetchRegistry: false
+    serviceUrl:
+      # It consult with other Eureka server for sync the service registry as it is standalone mode I give the local server address.
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    healthcheck:
+      enabled: true
