@@ -26,6 +26,6 @@ http://localhost:8181/h2-console
 http://localhost:8888/movies/default
 
 
-### MOvie-Web:
+### Movie-Web:
 
 http://localhost:8888/movies-web/default
